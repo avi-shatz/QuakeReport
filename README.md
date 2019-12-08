@@ -6,6 +6,9 @@ from the U.S. Geological Survey (USGS) organization.
 
 Used in a Udacity course in the Beginning Android Nanodegree.
 
+I added a 2 slider menu, to choose the minimum magnitude,
+  and the list size, that the user want to see.
+
 More info on the USGS Earthquake API available at:
 https://earthquake.usgs.gov/fdsnws/event/1/
 
