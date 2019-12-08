@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/earthquake_pic_2"
+    android:backgroundTint="#b3FFFFFF"
+    android:backgroundTintMode="src_over"
+
+    tools:context="com.example.android.quakereport.MainActivity">
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Show Earthquakes"
+        android:background="#FFA000"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/button"
+        >
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:max="99"
+        android:min="0"
+        android:progress="45"
+        />
+        <TextView
+            android:id="@+id/minMag"
+            android:layout_margin="16dp"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:text="4.5"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:textColor="@color/cardview_shadow_start_color"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayout1"
+        >
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:max="99"
+        android:min="0"
+        android:progress="20"
+        />
+        <TextView
+            android:id="@+id/limit"
+            android:layout_margin="16dp"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:text="20"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:textColor="@color/cardview_shadow_start_color"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
